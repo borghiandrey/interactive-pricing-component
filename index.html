@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="dist/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
+
+    <section class="content">
+
+      <div class="values">
+        <div class="pageviews">
+          <p><span id="pageViewOutput"></span>k pageviews</p>
+        </div>
+        <div class="sliderContainer">
+          <input id="rangeSlider" type="range" min="1" max="6" value="1" class="slider">
+        </div>
+        <div class="pricing">
+          <div>$<span id="sliderOutput"></span>.00 <span class="monthOrYear">/</span><span class ="monthOrYear" id="moyOutput"></span></div>
+        </div>
+      </div>
+
+
+      <div class="billingContainer">
+        <div class="monthly">
+          <p>Monthly Billing</p>
+        </div>
+        <div class="switchContainer">
+          <label class="switch">
+            <input id="switch" type="checkbox" onclick="change()" checked>
+            <span class="slidingBtn"></span>
+          </label>
+        </div>
+        <div class="yearly">
+          <p>Yearly Billing</p>
+        </div>
+        <div class="discount">
+          <p>25% discount</p>
+        </div>
+      </div>
+
+      <div class="cta">
+        <ul>
+          <li><span>Unlimited websites</span></li>
+          <li><span>100% data ownership</span></li>
+          <li><span>Email reports</span></li>
+        </ul>
+
+        <a href="#" class="cta-btn">Start my trial</a>
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+
+
+
+  
+  
+  
+  <!-- 
+  Sign-up for our 30-day trial. No credit card required. 
+
+  Pageviews
+  $ /month
+
+  Monthly Billing
+  Yearly Billing 25% discount
+
+
+   -->
+
+  <script src="app.js"></script>
+</body>
+</html>
