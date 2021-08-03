@@ -128,11 +128,11 @@ slider.addEventListener("input", function(){
   slider.style.background = color;
 })
 
-document.onkeyup = function(event) {
-  if(event.code === "Space") {
+document.onkeyup = function(e) {
+  if(e.code === "Space") {
     try {
       document.activeElement.click();
-    } catch (event) {
+    } catch (e) {
       console.log(event);
     }
   }
