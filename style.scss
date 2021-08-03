@@ -153,14 +153,18 @@ main {
           text-transform: uppercase;
           font-size: 2.4rem;
           font-weight: 800;
+
+          &::after {
+            content: " / month";
+            position: relative;
+            top: -10px;
+            color: $lightFont;
+            font-size: 0.89rem;
+            font-weight: 600;
+            text-transform: lowercase;
+          }
         }
         .monthOrYear {
-          position: relative;
-          top: -10px;
-          color: $lightFont;
-          font-size: 0.89rem;
-          font-weight: 600;
-          text-transform: lowercase;
         }
 
       }

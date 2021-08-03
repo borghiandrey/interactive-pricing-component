@@ -163,7 +163,8 @@ main {
   font-weight: 800;
 }
 
-.container .content .values .pricing .monthOrYear {
+.container .content .values .pricing div::after {
+  content: " / month";
   position: relative;
   top: -10px;
   color: #9998aa;
