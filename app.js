@@ -2,32 +2,122 @@ const slider = document.getElementById('rangeSlider');
 const sliderOutput = document.getElementById('sliderOutput');
 const pageViewOutput = document.getElementById('pageViewOutput');
 
-sliderOutput.innerHTML = slider.value * 3;
-pageViewOutput.innerHTML = slider.value * 25;
+sliderOutput.innerHTML = 8 * 0.75;
+pageViewOutput.innerHTML = 10 + "K";
 
 slider.oninput = function() {
-  sliderOutput.innerHTML = this.value * 3;
-  pageViewOutput.innerHTML = this.value * 25;
+  if(slider.value == 1) {
+    sliderOutput.innerHTML = 8 * 0.75;
+    pageViewOutput.innerHTML = 10 + "K";
+  }
+  if(slider.value == 2) {
+    sliderOutput.innerHTML = 12 * 0.75;
+    pageViewOutput.innerHTML = 50 + "K";
+  }
+  if(slider.value == 3) {
+    sliderOutput.innerHTML = 16 * 0.75;
+    pageViewOutput.innerHTML = 100 + "K";
+  }
+  if(slider.value == 4) {
+    sliderOutput.innerHTML = 24 * 0.75;
+    pageViewOutput.innerHTML = 500 + "K";
+  }
+  if(slider.value == 5) {
+    sliderOutput.innerHTML = 36 * 0.75;
+    pageViewOutput.innerHTML = 1 + "M";
+  }
 }
 
 function change() {
   var decider = document.getElementById('switch');
   if(decider.checked){
-    sliderOutput.innerHTML = slider.value * 3;
-    pageViewOutput.innerHTML = slider.value * 25;
+    if(slider.value == 1) {
+      sliderOutput.innerHTML = 8 * 0.75;
+      pageViewOutput.innerHTML = 10 + "K";
+    }
+    if(slider.value == 2) {
+      sliderOutput.innerHTML = 12 * 0.75;
+      pageViewOutput.innerHTML = 50 + "K";
+    }
+    if(slider.value == 3) {
+      sliderOutput.innerHTML = 16 * 0.75;
+      pageViewOutput.innerHTML = 100 + "K";
+    }
+    if(slider.value == 4) {
+      sliderOutput.innerHTML = 24 * 0.75;
+      pageViewOutput.innerHTML = 500 + "K";
+    }
+    if(slider.value == 5) {
+      sliderOutput.innerHTML = 36 * 0.75;
+      pageViewOutput.innerHTML = 1 + "M";
+    }
     
     slider.oninput = function() {
-      sliderOutput.innerHTML = this.value * 3;
-      pageViewOutput.innerHTML = this.value * 25;
+      if(slider.value == 1) {
+        sliderOutput.innerHTML = 8 * 0.75;
+        pageViewOutput.innerHTML = 10 + "K";
+      }
+      if(slider.value == 2) {
+        sliderOutput.innerHTML = 12 * 0.75;
+        pageViewOutput.innerHTML = 50 + "K";
+      }
+      if(slider.value == 3) {
+        sliderOutput.innerHTML = 16 * 0.75;
+        pageViewOutput.innerHTML = 100 + "K";
+      }
+      if(slider.value == 4) {
+        sliderOutput.innerHTML = 24 * 0.75;
+        pageViewOutput.innerHTML = 500 + "K";
+      }
+      if(slider.value == 5) {
+        sliderOutput.innerHTML = 36 * 0.75;
+        pageViewOutput.innerHTML = 1 + "M";
+      }
     }
     
   } else {
-    sliderOutput.innerHTML = slider.value * 4;
-    pageViewOutput.innerHTML = slider.value * 25;
+    if(slider.value == 1) {
+      sliderOutput.innerHTML = 8;
+      pageViewOutput.innerHTML = 10 + "K";
+    }
+    if(slider.value == 2) {
+      sliderOutput.innerHTML = 12;
+      pageViewOutput.innerHTML = 50 + "K";
+    }
+    if(slider.value == 3) {
+      sliderOutput.innerHTML = 16;
+      pageViewOutput.innerHTML = 100 + "K";
+    }
+    if(slider.value == 4) {
+      sliderOutput.innerHTML = 24;
+      pageViewOutput.innerHTML = 500 + "K";
+    }
+    if(slider.value == 5) {
+      sliderOutput.innerHTML = 36;
+      pageViewOutput.innerHTML = 1 + "M";
+    }
     
     slider.oninput = function() {
-      sliderOutput.innerHTML = this.value * 4;
-      pageViewOutput.innerHTML = this.value * 25;
+      if(slider.value == 1) {
+        sliderOutput.innerHTML = 8;
+        pageViewOutput.innerHTML = 10 + "K";
+      }
+      if(slider.value == 2) {
+        sliderOutput.innerHTML = 12;
+        pageViewOutput.innerHTML = 50 + "K";
+      }
+      if(slider.value == 3) {
+        sliderOutput.innerHTML = 16;
+        pageViewOutput.innerHTML = 100 + "K";
+      }
+      if(slider.value == 4) {
+        sliderOutput.innerHTML = 24;
+        pageViewOutput.innerHTML = 500 + "K";
+      }
+      if(slider.value == 5) {
+        sliderOutput.innerHTML = 36;
+        pageViewOutput.innerHTML = 1 + "M";
+      }
     }
   }
 }
