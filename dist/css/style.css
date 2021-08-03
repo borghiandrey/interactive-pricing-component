@@ -260,7 +260,7 @@ main {
 }
 
 .container .content .billingContainer .switchContainer input:focus + .slidingBtn {
-  box-shadow: 0 0 1px #20afa1;
+  box-shadow: 0 0 10px #20afa1;
 }
 
 .container .content .billingContainer .switchContainer input:checked + .slidingBtn:before {
@@ -342,5 +342,9 @@ main {
   .container .content .cta .cta-btn {
     align-self: center;
   }
+}
+
+label {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

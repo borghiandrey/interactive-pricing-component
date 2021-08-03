@@ -127,3 +127,13 @@ slider.addEventListener("input", function(){
   var color = "linear-gradient(to right, rgb(121, 235, 222) " + x + "%, rgb(214,214,214) " + x + "%)";
   slider.style.background = color;
 })
+
+document.onkeyup = function(event) {
+  if(event.code === "Space") {
+    try {
+      document.activeElement.click();
+    } catch (event) {
+      console.log(event);
+    }
+  }
+}

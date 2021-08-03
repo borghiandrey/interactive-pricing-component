@@ -23,14 +23,15 @@
       <p>Sign-up for our 30-day trial. No credit card required.</p>
     </header>
 
-    <section class="content">
+    <div class="content">
 
       <div class="values">
         <div class="pageviews">
           <p><span id="pageViewOutput"></span> pageviews</p>
         </div>
         <div class="sliderContainer">
-          <input id="rangeSlider" type="range" min="1" max="5" value="1" class="slider">
+          <label for="rangeSlider">Pricing per views</label>
+          <input id="rangeSlider" type="range" min="1" max="5" value="1" class="slider" aria-role="slider">
         </div>
         <div class="pricing">
           <div>$<span id="sliderOutput"></span>.00 </div>
@@ -42,9 +43,10 @@
           <p>Monthly Billing</p>
         </div>
         <div class="switchContainer">
+          <label for="switch">Switch between yearly and monthly fees</label>
           <label class="switch">
-            <input id="switch" type="checkbox" onclick="change()" checked>
-            <span class="slidingBtn"></span>
+            <input id="switch" type="checkbox" onclick="change()" checked tabindex="-1">
+            <span class="slidingBtn" tabindex="0"></span>
           </label>
         </div>
         <div class="yearly">
@@ -65,7 +67,7 @@
         <a href="#" class="cta-btn">Start my trial</a>
       </div>
 
-    </section>
+    </div>
 
   </main>
 
