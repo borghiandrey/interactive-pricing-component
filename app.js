@@ -133,7 +133,7 @@ document.onkeyup = function(e) {
     try {
       document.activeElement.click();
     } catch (e) {
-      console.log(event);
+      console.log(e);
     }
   }
 }
